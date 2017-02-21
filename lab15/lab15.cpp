@@ -13,9 +13,11 @@ int main () {
     string food;
     string animal;
     
+    //user enters verb
     cout << "Enter a verb ending in 'ing':" << endl;
     getline(cin, verb);
     
+    //user enters person
     cout << "Enter a person:" << endl;
     getline(cin, person);
     

@@ -35,8 +35,8 @@ int main () {
     moneyReturned = moneyEntered-fee;
     
     //convert money returned and fee
-    fee /=100;
-    moneyReturned /=100;
+    /*fee /=100;
+    moneyReturned /=100;*/
     
     cout << "You have "<< quarters << " quarters, " << dimes << " dimes, " << nickels << " nickels, and " << pennies << " pennies." << endl;
     cout << "After a fee of $" << fee << " You will recieve $" << moneyReturned << ".";
