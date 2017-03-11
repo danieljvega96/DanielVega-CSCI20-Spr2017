@@ -18,7 +18,7 @@ class TemperatureConverter {
         TemperatureConverter(double tempKelvin);
                
     private:
-        double kelvin_ = 0;
+        double kelvin_ ;
 };
 
 //Default constructor
