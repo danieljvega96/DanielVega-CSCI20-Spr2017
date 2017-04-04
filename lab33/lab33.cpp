@@ -16,7 +16,7 @@ int main() {
     srand(time(0));                         // random number seed
     randNumber = ((rand() % 50) + 1);
     
-    cout << "Random number is: " << randNumber << endl;
+    //cout << "Random number is: " << randNumber << endl;
     cout << "Guess a number between 1 and 50: "<< endl;
     cin >> userGuess;
     
