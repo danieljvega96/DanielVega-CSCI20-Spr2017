@@ -9,31 +9,33 @@ using namespace std;
 
 class Score {
     public:
-        void SetUserScore(int userScore);
-        int  GetUserScore();
-        void SetCompScore(int computerScore); 
-        int  GetCompScore();
-    private:
+        int SetUserScore(int userScore);
+        //int  GetUserScore();
+        int SetCompScore(int computerScore); 
+        //int  GetCompScore();
+    /*private:
         int userScore_;
-        int compScore_;
+        int compScore_;*/
         
 };
-void Score::SetUserScore(int userScore) {
-        userScore_ = userScore + 1;
+int Score::SetUserScore(int userScore) {
+        userScore = userScore + 1;
+        return userScore;
     }
     
-int Score::GetUserScore(){
+/*int Score::GetUserScore(){
      return userScore_;   
     }
-
-void Score::SetCompScore(int computerScore){
-        compScore_ = computerScore + 1;
+*/
+int Score::SetCompScore(int computerScore){
+        computerScore = computerScore + 1;
+        return computerScore;
     }
 
-int Score::GetCompScore(){
+/*int Score::GetCompScore(){
     return compScore_;
 }
-
+*/
 int main(){
     int rock = 1;
     int paper = 2;
@@ -63,6 +65,7 @@ int main(){
    
    while (userScore <= numberOfGames || computerScore <= numberOfGames){
    
+    Score assignScore;
    //for (i = 0; i < numberOfGames; ++i){
        
        cin >> userChoice;
@@ -118,8 +121,6 @@ int main(){
     }
     
     cout << endl;
-    /*while (Score <= numberOfGames){
-    }*/
     
     if ((userChoice == 1 && computerChoice == 1)||
         (userChoice == 2 && computerChoice == 2)||
@@ -142,7 +143,7 @@ int main(){
             (userChoice == 5 && computerChoice == 1)){
             
             cout << "Sorry, the computer beat you!" << endl << endl;
-            computerScore = computerScore + 1;
+            computerScore = assignScore.SetCompScore(computerScore);
             }
             
     else if ((computerChoice == 1 && userChoice == 4)||
@@ -157,7 +158,7 @@ int main(){
             (computerChoice == 5 && userChoice == 1)){
                 
             cout << "Good job, you beat the computer!"<< endl <<endl;
-            userScore = userScore + 1;
+            userScore = assignScore.SetUserScore(userScore);
             }
    }
    
