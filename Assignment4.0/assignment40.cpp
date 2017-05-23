@@ -2,7 +2,7 @@
 //May 2nd
 //create a program to read in student's answers for a test and compare the
 //answers to an answer key. 1 point for each correct answer, 0 for omitted,
-//and 1/4 deducted foran incorrect answer. Program sould ouput to the screen
+//and 1/4 deducted for an incorrect answer. Program sould ouput to the screen
 //student's name, list of missed questions, and overall grade on exam.
 #include <iostream>
 #include <fstream>
